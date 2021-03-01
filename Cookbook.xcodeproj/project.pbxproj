@@ -10,7 +10,6 @@
 		C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82025ED626000347F6C /* CookbookApp.swift */; };
 		C4BEA82325ED626000347F6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82225ED626000347F6C /* ContentView.swift */; };
 		C4BEA82525ED626100347F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BEA82425ED626100347F6C /* Assets.xcassets */; };
-		C4BEA82825ED626100347F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BEA82725ED626100347F6C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +17,6 @@
 		C4BEA82025ED626000347F6C /* CookbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookApp.swift; sourceTree = "<group>"; };
 		C4BEA82225ED626000347F6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4BEA82425ED626100347F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C4BEA82725ED626100347F6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4BEA82925ED626100347F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,21 +50,84 @@
 		C4BEA81F25ED626000347F6C /* Cookbook */ = {
 			isa = PBXGroup;
 			children = (
-				C4BEA82025ED626000347F6C /* CookbookApp.swift */,
-				C4BEA82225ED626000347F6C /* ContentView.swift */,
-				C4BEA82425ED626100347F6C /* Assets.xcassets */,
-				C4BEA82925ED626100347F6C /* Info.plist */,
-				C4BEA82625ED626100347F6C /* Preview Content */,
+				C4BEA83325ED633600347F6C /* App */,
+				C4BEA83025ED632200347F6C /* Presentation */,
+				C4BEA83125ED632C00347F6C /* Domain */,
+				C4BEA83225ED633000347F6C /* Data */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
 		};
-		C4BEA82625ED626100347F6C /* Preview Content */ = {
+		C4BEA83025ED632200347F6C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				C4BEA82725ED626100347F6C /* Preview Assets.xcassets */,
+				C4BEA83625ED638400347F6C /* Scenes */,
+				C4BEA83525ED637A00347F6C /* Assets */,
 			);
-			path = "Preview Content";
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C4BEA83125ED632C00347F6C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C4BEA83225ED633000347F6C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4BEA83325ED633600347F6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA83B25ED640000347F6C /* Lifecycle */,
+				C4BEA83725ED638F00347F6C /* Configuration */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4BEA83525ED637A00347F6C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA82425ED626100347F6C /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C4BEA83625ED638400347F6C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA83A25ED63CA00347F6C /* Recipes */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C4BEA83725ED638F00347F6C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA82925ED626100347F6C /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C4BEA83A25ED63CA00347F6C /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA82225ED626000347F6C /* ContentView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		C4BEA83B25ED640000347F6C /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				C4BEA82025ED626000347F6C /* CookbookApp.swift */,
+			);
+			path = Lifecycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +187,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4BEA82825ED626100347F6C /* Preview Assets.xcassets in Resources */,
 				C4BEA82525ED626100347F6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,10 +328,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Cookbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W2HFS492D7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Cookbook/Info.plist;
+				INFOPLIST_FILE = Cookbook/App/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,10 +350,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Cookbook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W2HFS492D7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Cookbook/Info.plist;
+				INFOPLIST_FILE = Cookbook/App/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
