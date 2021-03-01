@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82025ED626000347F6C /* CookbookApp.swift */; };
-		C4BEA82325ED626000347F6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82225ED626000347F6C /* ContentView.swift */; };
+		C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82225ED626000347F6C /* RecipesView.swift */; };
 		C4BEA82525ED626100347F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BEA82425ED626100347F6C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4BEA81D25ED626000347F6C /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BEA82025ED626000347F6C /* CookbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookApp.swift; sourceTree = "<group>"; };
-		C4BEA82225ED626000347F6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4BEA82225ED626000347F6C /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		C4BEA82425ED626100347F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BEA82925ED626100347F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +117,7 @@
 		C4BEA83A25ED63CA00347F6C /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				C4BEA82225ED626000347F6C /* ContentView.swift */,
+				C4BEA82225ED626000347F6C /* RecipesView.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4BEA82325ED626000347F6C /* ContentView.swift in Sources */,
+				C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */,
 				C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
