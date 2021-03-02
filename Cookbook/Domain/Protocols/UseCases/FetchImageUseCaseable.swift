@@ -9,6 +9,9 @@ import Foundation
 
 //MARK: Use case errors
 enum FetchImageError: Error {
+    case url
+    case decoding
+    case empty
     case unkown(Error)
 }
 

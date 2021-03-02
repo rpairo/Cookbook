@@ -12,6 +12,7 @@ struct RecipeDTO: Decodable {
     var name: String
     var ingredients: IngredientsDTO
 
+    // MARK: Keys
     enum CodingKeys: String, CodingKey {
         case name
         case ingredients

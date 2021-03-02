@@ -16,6 +16,14 @@
 		C41E155D25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E155C25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift */; };
 		C41E156425EEE0D1009E6AE4 /* ImagesRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156325EEE0D1009E6AE4 /* ImagesRepositable.swift */; };
 		C41E156725EEE5EF009E6AE4 /* FetchImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156625EEE5EF009E6AE4 /* FetchImageUseCase.swift */; };
+		C41E156A25EEEB71009E6AE4 /* ImagesDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156925EEEB71009E6AE4 /* ImagesDataSourceable.swift */; };
+		C41E156D25EEEBC2009E6AE4 /* ImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156C25EEEBC2009E6AE4 /* ImagesRepository.swift */; };
+		C41E157225EEEC66009E6AE4 /* Pixabay.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41E157125EEEC66009E6AE4 /* Pixabay.plist */; };
+		C41E157625EEEE24009E6AE4 /* PixabayConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E157525EEEE24009E6AE4 /* PixabayConfiguration.swift */; };
+		C41E157B25EEF012009E6AE4 /* PixabayImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E157A25EEF012009E6AE4 /* PixabayImagesDataSource.swift */; };
+		C41E157F25EEF187009E6AE4 /* PixabayImagesDataSource+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E157E25EEF187009E6AE4 /* PixabayImagesDataSource+Fetch.swift */; };
+		C41E158225EEF63E009E6AE4 /* ImagesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E158125EEF63E009E6AE4 /* ImagesDTO.swift */; };
+		C41E158525EEF7DB009E6AE4 /* ImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E158425EEF7DB009E6AE4 /* ImageDTO.swift */; };
 		C48D986B25ED69E500C72873 /* FetchIngredientsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D986A25ED69E500C72873 /* FetchIngredientsUseCaseable.swift */; };
 		C48D986F25ED6ABE00C72873 /* FetchIngredientsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D986E25ED6ABE00C72873 /* FetchIngredientsUseCase.swift */; };
 		C48D987225ED6C5D00C72873 /* IngredientsRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D987125ED6C5D00C72873 /* IngredientsRepositable.swift */; };
@@ -47,6 +55,14 @@
 		C41E155C25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCaseable.swift; sourceTree = "<group>"; };
 		C41E156325EEE0D1009E6AE4 /* ImagesRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepositable.swift; sourceTree = "<group>"; };
 		C41E156625EEE5EF009E6AE4 /* FetchImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCase.swift; sourceTree = "<group>"; };
+		C41E156925EEEB71009E6AE4 /* ImagesDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataSourceable.swift; sourceTree = "<group>"; };
+		C41E156C25EEEBC2009E6AE4 /* ImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepository.swift; sourceTree = "<group>"; };
+		C41E157125EEEC66009E6AE4 /* Pixabay.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pixabay.plist; sourceTree = "<group>"; };
+		C41E157525EEEE24009E6AE4 /* PixabayConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayConfiguration.swift; sourceTree = "<group>"; };
+		C41E157A25EEF012009E6AE4 /* PixabayImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayImagesDataSource.swift; sourceTree = "<group>"; };
+		C41E157E25EEF187009E6AE4 /* PixabayImagesDataSource+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PixabayImagesDataSource+Fetch.swift"; sourceTree = "<group>"; };
+		C41E158125EEF63E009E6AE4 /* ImagesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDTO.swift; sourceTree = "<group>"; };
+		C41E158425EEF7DB009E6AE4 /* ImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDTO.swift; sourceTree = "<group>"; };
 		C48D986A25ED69E500C72873 /* FetchIngredientsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchIngredientsUseCaseable.swift; sourceTree = "<group>"; };
 		C48D986E25ED6ABE00C72873 /* FetchIngredientsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchIngredientsUseCase.swift; sourceTree = "<group>"; };
 		C48D987125ED6C5D00C72873 /* IngredientsRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsRepositable.swift; sourceTree = "<group>"; };
@@ -81,6 +97,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41E156F25EEEC09009E6AE4 /* Pixabay */ = {
+			isa = PBXGroup;
+			children = (
+				C41E157025EEEC25009E6AE4 /* Configuration */,
+				C41E157425EEEE06009E6AE4 /* Entities */,
+				C41E157925EEEFDC009E6AE4 /* DataSources */,
+			);
+			path = Pixabay;
+			sourceTree = "<group>";
+		};
+		C41E157025EEEC25009E6AE4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C41E157125EEEC66009E6AE4 /* Pixabay.plist */,
+				C41E157525EEEE24009E6AE4 /* PixabayConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C41E157425EEEE06009E6AE4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C41E158125EEF63E009E6AE4 /* ImagesDTO.swift */,
+				C41E158425EEF7DB009E6AE4 /* ImageDTO.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C41E157925EEEFDC009E6AE4 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C41E157A25EEF012009E6AE4 /* PixabayImagesDataSource.swift */,
+				C41E157E25EEF187009E6AE4 /* PixabayImagesDataSource+Fetch.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		C48D986825ED698800C72873 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +157,6 @@
 		C48D987D25ED705900C72873 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C48D988E25ED7E5700C72873 /* RiMConfiguration.swift */,
 				C48D987E25ED706F00C72873 /* IngredientsDTO.swift */,
 				C41E155425EEA5CA009E6AE4 /* RecipesDTO.swift */,
 				C41E155725EEA622009E6AE4 /* RecipeDTO.swift */,
@@ -144,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				C48D988B25ED7C4200C72873 /* RiM.plist */,
+				C48D988E25ED7E5700C72873 /* RiMConfiguration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -277,6 +330,7 @@
 			children = (
 				C48D987425ED6CAC00C72873 /* IngredientsRepository.swift */,
 				C41E154525EEA28E009E6AE4 /* RecipesRepository.swift */,
+				C41E156C25EEEBC2009E6AE4 /* ImagesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -284,6 +338,7 @@
 		C4DA3B8225ED66D50077993F /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				C41E156F25EEEC09009E6AE4 /* Pixabay */,
 				C48D988825ED7B0200C72873 /* RiM */,
 			);
 			path = DataSources;
@@ -294,6 +349,7 @@
 			children = (
 				C48D987725ED6D7400C72873 /* IngredientsDataSourceable.swift */,
 				C4BDB0A825EE8338008E3367 /* RecipesDataSourceable.swift */,
+				C41E156925EEEB71009E6AE4 /* ImagesDataSourceable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -392,6 +448,7 @@
 			files = (
 				C4BEA82525ED626100347F6C /* Assets.xcassets in Resources */,
 				C48D988C25ED7C4200C72873 /* RiM.plist in Resources */,
+				C41E157225EEEC66009E6AE4 /* Pixabay.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +466,15 @@
 				C41E155825EEA622009E6AE4 /* RecipeDTO.swift in Sources */,
 				C48D987F25ED706F00C72873 /* IngredientsDTO.swift in Sources */,
 				C4DA3B8925ED67140077993F /* RecipesViewModel.swift in Sources */,
+				C41E158225EEF63E009E6AE4 /* ImagesDTO.swift in Sources */,
+				C41E156D25EEEBC2009E6AE4 /* ImagesRepository.swift in Sources */,
+				C41E157625EEEE24009E6AE4 /* PixabayConfiguration.swift in Sources */,
 				C4162BE825EDBF8A005E1832 /* RiMIngredientsDataSource+Fetch.swift in Sources */,
 				C41E156725EEE5EF009E6AE4 /* FetchImageUseCase.swift in Sources */,
 				C48D986F25ED6ABE00C72873 /* FetchIngredientsUseCase.swift in Sources */,
 				C48D988F25ED7E5700C72873 /* RiMConfiguration.swift in Sources */,
+				C41E157B25EEF012009E6AE4 /* PixabayImagesDataSource.swift in Sources */,
+				C41E156A25EEEB71009E6AE4 /* ImagesDataSourceable.swift in Sources */,
 				C41E154C25EEA335009E6AE4 /* RiMRecipesDataSource+Fetch.swift in Sources */,
 				C41E154625EEA28E009E6AE4 /* RecipesRepository.swift in Sources */,
 				C41E155525EEA5CA009E6AE4 /* RecipesDTO.swift in Sources */,
@@ -420,11 +482,13 @@
 				C48D986B25ED69E500C72873 /* FetchIngredientsUseCaseable.swift in Sources */,
 				C48D987225ED6C5D00C72873 /* IngredientsRepositable.swift in Sources */,
 				C41E155D25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift in Sources */,
+				C41E158525EEF7DB009E6AE4 /* ImageDTO.swift in Sources */,
 				C48D987825ED6D7400C72873 /* IngredientsDataSourceable.swift in Sources */,
 				C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */,
 				C41E154925EEA30A009E6AE4 /* RiMRecipesDataSource.swift in Sources */,
 				C41E156425EEE0D1009E6AE4 /* ImagesRepositable.swift in Sources */,
 				C4BDB0AD25EE837D008E3367 /* FetchRecipesUseCaseable.swift in Sources */,
+				C41E157F25EEF187009E6AE4 /* PixabayImagesDataSource+Fetch.swift in Sources */,
 				C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */,
 				C48D988525ED72BE00C72873 /* Ingredient.swift in Sources */,
 				C4BDB0B025EE84AB008E3367 /* Recipe.swift in Sources */,
