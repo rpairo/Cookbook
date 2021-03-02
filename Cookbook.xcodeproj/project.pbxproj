@@ -13,6 +13,9 @@
 		C41E154C25EEA335009E6AE4 /* RiMRecipesDataSource+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E154B25EEA335009E6AE4 /* RiMRecipesDataSource+Fetch.swift */; };
 		C41E155525EEA5CA009E6AE4 /* RecipesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E155425EEA5CA009E6AE4 /* RecipesDTO.swift */; };
 		C41E155825EEA622009E6AE4 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E155725EEA622009E6AE4 /* RecipeDTO.swift */; };
+		C41E155D25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E155C25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift */; };
+		C41E156425EEE0D1009E6AE4 /* ImagesRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156325EEE0D1009E6AE4 /* ImagesRepositable.swift */; };
+		C41E156725EEE5EF009E6AE4 /* FetchImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E156625EEE5EF009E6AE4 /* FetchImageUseCase.swift */; };
 		C48D986B25ED69E500C72873 /* FetchIngredientsUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D986A25ED69E500C72873 /* FetchIngredientsUseCaseable.swift */; };
 		C48D986F25ED6ABE00C72873 /* FetchIngredientsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D986E25ED6ABE00C72873 /* FetchIngredientsUseCase.swift */; };
 		C48D987225ED6C5D00C72873 /* IngredientsRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D987125ED6C5D00C72873 /* IngredientsRepositable.swift */; };
@@ -41,6 +44,9 @@
 		C41E154B25EEA335009E6AE4 /* RiMRecipesDataSource+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RiMRecipesDataSource+Fetch.swift"; sourceTree = "<group>"; };
 		C41E155425EEA5CA009E6AE4 /* RecipesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDTO.swift; sourceTree = "<group>"; };
 		C41E155725EEA622009E6AE4 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
+		C41E155C25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCaseable.swift; sourceTree = "<group>"; };
+		C41E156325EEE0D1009E6AE4 /* ImagesRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepositable.swift; sourceTree = "<group>"; };
+		C41E156625EEE5EF009E6AE4 /* FetchImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCase.swift; sourceTree = "<group>"; };
 		C48D986A25ED69E500C72873 /* FetchIngredientsUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchIngredientsUseCaseable.swift; sourceTree = "<group>"; };
 		C48D986E25ED6ABE00C72873 /* FetchIngredientsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchIngredientsUseCase.swift; sourceTree = "<group>"; };
 		C48D987125ED6C5D00C72873 /* IngredientsRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsRepositable.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			children = (
 				C48D986A25ED69E500C72873 /* FetchIngredientsUseCaseable.swift */,
 				C4BDB0AC25EE837D008E3367 /* FetchRecipesUseCaseable.swift */,
+				C41E155C25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 			children = (
 				C48D987125ED6C5D00C72873 /* IngredientsRepositable.swift */,
 				C4BDB0B525EE8737008E3367 /* RecipesRepositable.swift */,
+				C41E156325EEE0D1009E6AE4 /* ImagesRepositable.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 			children = (
 				C48D986E25ED6ABE00C72873 /* FetchIngredientsUseCase.swift */,
 				C4BDB0B225EE86FB008E3367 /* FetchRecipesUseCase.swift */,
+				C41E156625EEE5EF009E6AE4 /* FetchImageUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -401,6 +410,7 @@
 				C48D987F25ED706F00C72873 /* IngredientsDTO.swift in Sources */,
 				C4DA3B8925ED67140077993F /* RecipesViewModel.swift in Sources */,
 				C4162BE825EDBF8A005E1832 /* RiMIngredientsDataSource+Fetch.swift in Sources */,
+				C41E156725EEE5EF009E6AE4 /* FetchImageUseCase.swift in Sources */,
 				C48D986F25ED6ABE00C72873 /* FetchIngredientsUseCase.swift in Sources */,
 				C48D988F25ED7E5700C72873 /* RiMConfiguration.swift in Sources */,
 				C41E154C25EEA335009E6AE4 /* RiMRecipesDataSource+Fetch.swift in Sources */,
@@ -409,9 +419,11 @@
 				C4BDB0B625EE8737008E3367 /* RecipesRepositable.swift in Sources */,
 				C48D986B25ED69E500C72873 /* FetchIngredientsUseCaseable.swift in Sources */,
 				C48D987225ED6C5D00C72873 /* IngredientsRepositable.swift in Sources */,
+				C41E155D25EEDF7E009E6AE4 /* FetchImageUseCaseable.swift in Sources */,
 				C48D987825ED6D7400C72873 /* IngredientsDataSourceable.swift in Sources */,
 				C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */,
 				C41E154925EEA30A009E6AE4 /* RiMRecipesDataSource.swift in Sources */,
+				C41E156425EEE0D1009E6AE4 /* ImagesRepositable.swift in Sources */,
 				C4BDB0AD25EE837D008E3367 /* FetchRecipesUseCaseable.swift in Sources */,
 				C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */,
 				C48D988525ED72BE00C72873 /* Ingredient.swift in Sources */,
