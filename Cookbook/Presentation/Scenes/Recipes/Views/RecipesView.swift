@@ -13,8 +13,16 @@ struct RecipesView: View {
 
     // MARK: Views
     var body: some View {
-        List(viewModel.ingredients) { ingredient in
-            Text(ingredient.name)
+        VStack {
+            Text("Ingredients")
+            List(viewModel.ingredients) { ingredient in
+                Text(ingredient.name)
+            }
+
+            Text("Recipes")
+            List(viewModel.recipes) { recipe in
+                Text(recipe.name)
+            }
         }
         .onAppear {
             viewModel.onAppear()
