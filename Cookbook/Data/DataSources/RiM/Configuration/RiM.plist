@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Endpoints</key>
+	<dict>
+		<key>Ingredients</key>
+		<string>https://run.mocky.io/v3/45a5a07f-e981-4918-9c31-090b121d6c5f</string>
+	</dict>
+</dict>
+</plist>
