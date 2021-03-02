@@ -18,7 +18,10 @@ extension RiMRecipesDataSource {
     // MARK: Functionality
     func fetch(onComplete: @escaping FetchRecipesResult) {
         let session = URLSession(configuration: .default)
-        guard let url = fetchUrl else { return }
+        guard let url = fetchUrl else {
+            onComplete(.failure(.url))
+            return
+        }
 
         session.dataTask(with: url) { data, result, error in
             if let error = error {
