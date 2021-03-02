@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct CookbookApp: App {
+    // MARK: Scenes
     var body: some Scene {
         WindowGroup {
-            RecipesView()
+            RecipesView(
+                viewModel: RecipesViewModel(
+                    fetchIngredientsUseCase: FetchIngredientsUseCase(
+                        ingredientsRepository: IngredientsRepository(
+                            ingredientsDataSource: RiMIngredientsDataSource()
+                        )
+                    )
+                )
+            )
         }
     }
 }
