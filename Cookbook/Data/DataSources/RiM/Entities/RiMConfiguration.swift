@@ -9,6 +9,7 @@ import Foundation
 
 enum Endpoints: String {
     case ingredients = "Ingredients"
+    case recipes = "Recipes"
 }
 
 struct RiMConfiguration: Decodable {

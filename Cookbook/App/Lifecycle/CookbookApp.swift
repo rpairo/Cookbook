@@ -18,6 +18,10 @@ struct CookbookApp: App {
                         ingredientsRepository: IngredientsRepository(
                             ingredientsDataSource: RiMIngredientsDataSource()
                         )
+                    ), fetchRecipesUseCase: FetchRecipesUseCase(
+                        recipesRepository: RecipesRepository(
+                            recipesDataSource: RiMRecipesDataSource()
+                        )
                     )
                 )
             )

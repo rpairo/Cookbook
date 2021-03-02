@@ -8,7 +8,7 @@
 import Foundation
 
 struct IngredientsRepository: IngredientsRepositable {
-    // MARK: Data source
+    // MARK: Data sources
     var ingredientsDataSource: IngredientsDataSourceable
 
     // MARK: Functionality

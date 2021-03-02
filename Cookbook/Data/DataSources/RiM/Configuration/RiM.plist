@@ -4,6 +4,8 @@
 <dict>
 	<key>Endpoints</key>
 	<dict>
+		<key>Recipes</key>
+		<string>https://run.mocky.io/v3/713d0cf0-c627-4339-9236-bf35e4271e69</string>
 		<key>Ingredients</key>
 		<string>https://run.mocky.io/v3/45a5a07f-e981-4918-9c31-090b121d6c5f</string>
 	</dict>
