@@ -42,7 +42,7 @@
 		C4BDB0B325EE86FB008E3367 /* FetchRecipesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDB0B225EE86FB008E3367 /* FetchRecipesUseCase.swift */; };
 		C4BDB0B625EE8737008E3367 /* RecipesRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDB0B525EE8737008E3367 /* RecipesRepositable.swift */; };
 		C4BEA82125ED626000347F6C /* CookbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82025ED626000347F6C /* CookbookApp.swift */; };
-		C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82225ED626000347F6C /* RecipesView.swift */; };
+		C4BEA82325ED626000347F6C /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BEA82225ED626000347F6C /* DiscoverView.swift */; };
 		C4BEA82525ED626100347F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BEA82425ED626100347F6C /* Assets.xcassets */; };
 		C4DA3B8925ED67140077993F /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA3B8825ED67140077993F /* RecipesViewModel.swift */; };
 		C4E759AB25F108F5006BD322 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E759AA25F108F5006BD322 /* RecipeView.swift */; };
@@ -85,7 +85,7 @@
 		C4BDB0B525EE8737008E3367 /* RecipesRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRepositable.swift; sourceTree = "<group>"; };
 		C4BEA81D25ED626000347F6C /* Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BEA82025ED626000347F6C /* CookbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbookApp.swift; sourceTree = "<group>"; };
-		C4BEA82225ED626000347F6C /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		C4BEA82225ED626000347F6C /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		C4BEA82425ED626100347F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BEA82925ED626100347F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4DA3B8825ED67140077993F /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 		C4BEA83625ED638400347F6C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				C4BEA83A25ED63CA00347F6C /* Recipes */,
+				C4BEA83A25ED63CA00347F6C /* Discover */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -315,13 +315,13 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		C4BEA83A25ED63CA00347F6C /* Recipes */ = {
+		C4BEA83A25ED63CA00347F6C /* Discover */ = {
 			isa = PBXGroup;
 			children = (
 				C4DA3B8725ED67010077993F /* ViewModels */,
 				C4DA3B8625ED66F90077993F /* Views */,
 			);
-			path = Recipes;
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		C4BEA83B25ED640000347F6C /* Lifecycle */ = {
@@ -400,7 +400,7 @@
 		C4E759AD25F137AD006BD322 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C4BEA82225ED626000347F6C /* RecipesView.swift */,
+				C4BEA82225ED626000347F6C /* DiscoverView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -512,7 +512,7 @@
 				C4E759AB25F108F5006BD322 /* RecipeView.swift in Sources */,
 				C41E158525EEF7DB009E6AE4 /* ImageDTO.swift in Sources */,
 				C48D987825ED6D7400C72873 /* IngredientsDataSourceable.swift in Sources */,
-				C4BEA82325ED626000347F6C /* RecipesView.swift in Sources */,
+				C4BEA82325ED626000347F6C /* DiscoverView.swift in Sources */,
 				C41E154925EEA30A009E6AE4 /* RiMRecipesDataSource.swift in Sources */,
 				C41E156425EEE0D1009E6AE4 /* ImagesRepositable.swift in Sources */,
 				C4BDB0AD25EE837D008E3367 /* FetchRecipesUseCaseable.swift in Sources */,
