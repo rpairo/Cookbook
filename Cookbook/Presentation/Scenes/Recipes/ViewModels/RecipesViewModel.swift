@@ -15,13 +15,16 @@ class RecipesViewModel: ObservableObject {
     // MARK: Use cases
     var fetchIngredientsUseCase: FetchIngredientsUseCaseable
     var fetchRecipesUseCase: FetchRecipesUseCaseable
+    var fetchImageUseCase: FetchImageUseCase
 
     // MARK: Constructor
     init(fetchIngredientsUseCase: FetchIngredientsUseCaseable,
-         fetchRecipesUseCase: FetchRecipesUseCaseable) {
+         fetchRecipesUseCase: FetchRecipesUseCaseable,
+         fetchImageUseCase: FetchImageUseCase) {
 
         self.fetchIngredientsUseCase = fetchIngredientsUseCase
         self.fetchRecipesUseCase = fetchRecipesUseCase
+        self.fetchImageUseCase = fetchImageUseCase
     }
 
     // MARK: Lifecycle
@@ -37,6 +40,7 @@ class RecipesViewModel: ObservableObject {
             case .success(let ingredients):
                 DispatchQueue.main.async {
                     self.ingredients = ingredients
+                    self.fetchIngredientsImages()
                 }
             case .failure(let error):
                 print("Error: \(error)")
@@ -50,9 +54,40 @@ class RecipesViewModel: ObservableObject {
             case .success(let recipes):
                 DispatchQueue.main.async {
                     self.recipes = recipes
+                    self.fetchRecipesImages()
                 }
             case .failure(let error):
                 print("Error: \(error)")
+            }
+        }
+    }
+
+    func fetchIngredientsImages() {
+        for (index, ingredient) in ingredients.enumerated() {
+            fetchImageUseCase.execute(name: ingredient.name) { result in
+                switch result {
+                case .success(let image):
+                    DispatchQueue.main.async {
+                        self.ingredients[index].image = image
+                    }
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            }
+        }
+    }
+
+    func fetchRecipesImages() {
+        for (index, recipe) in recipes.enumerated() {
+            fetchImageUseCase.execute(name: recipe.name) { result in
+                switch result {
+                case .success(let image):
+                    DispatchQueue.main.async {
+                        self.recipes[index].image = image
+                    }
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
             }
         }
     }

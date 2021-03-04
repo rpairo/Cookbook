@@ -16,7 +16,7 @@ enum FetchImageError: Error {
 }
 
 //MARK: Use case result
-typealias FetchImageResult = (Result<String, FetchImageError>) -> Void
+typealias FetchImageResult = (Result<Data, FetchImageError>) -> Void
 
 protocol FetchImageUseCaseable {
     // MARK: Functionality

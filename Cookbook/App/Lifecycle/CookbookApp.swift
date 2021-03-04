@@ -22,6 +22,10 @@ struct CookbookApp: App {
                         recipesRepository: RecipesRepository(
                             recipesDataSource: RiMRecipesDataSource()
                         )
+                    ), fetchImageUseCase: FetchImageUseCase(
+                        imagesRepository: ImagesRepository(
+                            imagesDataSource: PixabayImagesDataSource()
+                        )
                     )
                 )
             )

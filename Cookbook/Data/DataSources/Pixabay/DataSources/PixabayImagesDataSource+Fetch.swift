@@ -43,7 +43,17 @@ extension PixabayImagesDataSource {
                 return
             }
 
-            onComplete(.success(image.large))
+            guard let url = URL(string: image.medium) else {
+                onComplete(.failure(.decoding))
+                return
+            }
+
+            guard let data = try? Data(contentsOf: url) else {
+                onComplete(.failure(.decoding))
+                return
+            }
+
+            onComplete(.success(data))
         }
         .resume()
     }
