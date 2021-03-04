@@ -11,5 +11,6 @@ struct Recipe: Identifiable {
     // MARK: Properties
     var id: UUID
     var name: String
+    var image: Data?
     var ingredients: [Ingredient]
 }

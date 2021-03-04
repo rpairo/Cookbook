@@ -9,10 +9,21 @@ import SwiftUI
 
 @main
 struct CookbookApp: App {
+    // MARK: Constructor
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor(.accentColor)
+        ]
+
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor(.accentColor)
+        ]
+    }
+    
     // MARK: Scenes
     var body: some Scene {
         WindowGroup {
-            RecipesView(
+            DiscoverView(
                 viewModel: RecipesViewModel(
                     fetchIngredientsUseCase: FetchIngredientsUseCase(
                         ingredientsRepository: IngredientsRepository(
@@ -21,6 +32,10 @@ struct CookbookApp: App {
                     ), fetchRecipesUseCase: FetchRecipesUseCase(
                         recipesRepository: RecipesRepository(
                             recipesDataSource: RiMRecipesDataSource()
+                        )
+                    ), fetchImageUseCase: FetchImageUseCase(
+                        imagesRepository: ImagesRepository(
+                            imagesDataSource: PixabayImagesDataSource()
                         )
                     )
                 )

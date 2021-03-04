@@ -9,6 +9,7 @@ import Foundation
 
 //MARK: Use case errors
 enum FetchIngredientsError: Error {
+    case url
     case decoding
     case emptyList
     case unkown(Error)
