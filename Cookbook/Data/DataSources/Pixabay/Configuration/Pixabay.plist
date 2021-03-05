@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Endpoint</key>
+	<string>https://pixabay.com/api/</string>
+	<key>Key</key>
+	<string>20497217-98f0ac95688f73a891c912b43</string>
+</dict>
+</plist>
