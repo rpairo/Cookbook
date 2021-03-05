@@ -20,14 +20,8 @@ struct RecipeView: View {
                     .scaledToFill()
             }
 
-            Rectangle()
-                .background(Color.black)
-                .opacity(0.3)
-
-            Text(recipe.name)
-                .padding()
-                .font(.title)
-                .foregroundColor(.white)
+            OpaqueLayerView()
+            ElementTitleView(title: recipe.name)
         }
         .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
         .frame(height: 150)
