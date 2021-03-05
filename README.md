@@ -374,6 +374,6 @@ struct RecipesDTO: Decodable {
 }
 ```
 
-For the sake of cleanliness and readability, I like to extend the external models and implement transformation responsibility between the domain entity (BO) and it (DTO).
+For the sake of cleanliness and readability, I like to extend the external models and implement transformation responsibility between the domain entity (BO) and it (DTO). Or create my own DTO entities with which to manipulate the external data collection, and later propagate it to the architecture.
 
-To do this, I create a constructor that receives the BO and propagates its mapping to the constructor of the DTO. I also create a function that transforms the DTO into BO, mapping the local properties and calling the DTO's constructor with them.
+To do this, I create a function that transforms the DTO into BO, mapping the local properties and calling the DTO's constructor with them.
