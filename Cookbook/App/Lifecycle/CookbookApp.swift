@@ -24,7 +24,7 @@ struct CookbookApp: App {
     var body: some Scene {
         WindowGroup {
             DiscoverView(
-                viewModel: RecipesViewModel(
+                viewModel: DiscoverViewModel(
                     fetchIngredientsUseCase: FetchIngredientsUseCase(
                         ingredientsRepository: IngredientsRepository(
                             ingredientsDataSource: RiMIngredientsDataSource()
@@ -37,7 +37,7 @@ struct CookbookApp: App {
                         imagesRepository: ImagesRepository(
                             imagesDataSource: PixabayImagesDataSource()
                         )
-                    )
+                    ), filterRecipesByIngredientsUseCase: FilterRecipesByIngredientsUseCase()
                 )
             )
         }

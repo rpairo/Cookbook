@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipesViewModel: ObservableObject {
+class DiscoverViewModel: ObservableObject {
     // MARK: Properties
     @Published var ingredients = [Ingredient]()
     @Published var recipes = [Recipe]()
@@ -15,32 +15,43 @@ class RecipesViewModel: ObservableObject {
     // MARK: Use cases
     var fetchIngredientsUseCase: FetchIngredientsUseCaseable
     var fetchRecipesUseCase: FetchRecipesUseCaseable
-    var fetchImageUseCase: FetchImageUseCase
+    var fetchImageUseCase: FetchImageUseCaseable
+    var filterRecipesByIngredientsUseCase: FilterRecipesByIngredientsUseCaseable
 
     // MARK: Constructor
     init(fetchIngredientsUseCase: FetchIngredientsUseCaseable,
          fetchRecipesUseCase: FetchRecipesUseCaseable,
-         fetchImageUseCase: FetchImageUseCase) {
+         fetchImageUseCase: FetchImageUseCase,
+         filterRecipesByIngredientsUseCase: FilterRecipesByIngredientsUseCaseable) {
 
         self.fetchIngredientsUseCase = fetchIngredientsUseCase
         self.fetchRecipesUseCase = fetchRecipesUseCase
         self.fetchImageUseCase = fetchImageUseCase
+        self.filterRecipesByIngredientsUseCase = filterRecipesByIngredientsUseCase
     }
 
     // MARK: Lifecycle
     func onAppear() {
-        fetchIngredients()
-        fetchRecipes()
-    }
+        self.fetchIngredients {
+            self.fetchIngredientsImages()
 
+            self.fetchRecipes {
+                self.fetchRecipesImages()
+            }
+        }
+    }
+}
+
+// MARK: Fetching data
+extension DiscoverViewModel {
     // MARK: Functionality
-    func fetchIngredients() {
+    func fetchIngredients(onComplete: @escaping () -> Void) {
         fetchIngredientsUseCase.execute { result in
             switch result {
             case .success(let ingredients):
                 DispatchQueue.main.async {
                     self.ingredients = ingredients
-                    self.fetchIngredientsImages()
+                    onComplete()
                 }
             case .failure(let error):
                 print("Error: \(error)")
@@ -48,20 +59,29 @@ class RecipesViewModel: ObservableObject {
         }
     }
 
-    func fetchRecipes() {
+    func fetchRecipes(onComplete: @escaping () -> Void) {
         fetchRecipesUseCase.execute { result in
             switch result {
             case .success(let recipes):
+                let filtered = self.filterRecipesByIngredientsUseCase.execute(
+                    recipes: recipes,
+                    ingredients: self.ingredients
+                )
+
                 DispatchQueue.main.async {
-                    self.recipes = recipes
-                    self.fetchRecipesImages()
+                    self.recipes = filtered
+                    onComplete()
                 }
             case .failure(let error):
                 print("Error: \(error)")
             }
         }
     }
+}
 
+
+// MARK: Images loading
+extension DiscoverViewModel {
     func fetchIngredientsImages() {
         for (index, ingredient) in ingredients.enumerated() {
             fetchImageUseCase.execute(name: ingredient.name) { result in

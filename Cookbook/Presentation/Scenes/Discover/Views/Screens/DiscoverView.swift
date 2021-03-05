@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscoverView: View {
     // MARK: Properties
-    @ObservedObject var viewModel: RecipesViewModel
+    @StateObject var viewModel: DiscoverViewModel
 
     // MARK: Views
     var body: some View {
@@ -23,20 +23,14 @@ struct DiscoverView: View {
         .onAppear {
             viewModel.onAppear()
         }
-
-
     }
+}
 
+// MARK: Sections
+extension DiscoverView {
     var ingredientsSection: some View {
         VStack(spacing: 0) {
-            Text("Available ingredients")
-                .foregroundColor(.blue)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                .font(.title)
-                .padding(.top)
-                .padding(.horizontal)
-                .padding(.bottom, 0)
-
+            SectionTitleView(title: "Available ingredients")
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -50,13 +44,7 @@ struct DiscoverView: View {
 
     var recipesSections: some View {
         VStack(spacing: 0) {
-            Text("Recipes")
-                .foregroundColor(.blue)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                .font(.title)
-                .padding(.top)
-                .padding(.horizontal)
-                .padding(.bottom, 0)
+            SectionTitleView(title: "Recipes")
 
             ForEach(viewModel.recipes) { recipe in
                 RecipeView(recipe: recipe)
