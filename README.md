@@ -1,6 +1,6 @@
 # Cookbook
 
-![Icon](https://user-images.githubusercontent.com/14141324/110068149-5d022780-7d75-11eb-917d-c6c558633a67.png)
+![Icon](https://user-images.githubusercontent.com/14141324/110068335-bff3be80-7d75-11eb-8115-5c335e4f6fdd.png)
 
 This application is a portfolio to meet the challenge of a selection process.
 
