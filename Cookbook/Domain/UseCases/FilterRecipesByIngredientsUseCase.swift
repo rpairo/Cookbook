@@ -11,15 +11,13 @@ struct FilterRecipesByIngredientsUseCase: FilterRecipesByIngredientsUseCaseable 
     // MARK: Functionality
     func execute(recipes: [Recipe], ingredients: [Ingredient]) -> [Recipe] {
         recipes.filter { recipe in
-            ingredients.contains(array: recipe.ingredients)
+            thereIs(this: recipe.ingredients, in: ingredients)
         }
     }
-}
 
-extension Array where Element: Equatable {
-    func contains(array: [Element]) -> Bool {
-        for item in array {
-            if !self.contains(item) {
+    func thereIs(this recipe: [Ingredient], in ingredients: [Ingredient]) -> Bool {
+        for ingredient in recipe {
+            guard ingredients.contains(where: { $0.name == ingredient.name }) else {
                 return false
             }
         }

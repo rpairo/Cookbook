@@ -13,11 +13,3 @@ struct Ingredient: Identifiable {
     var name: String
     var image: Data?
 }
-
-
-extension Ingredient: Equatable {
-    // MARK: Functionality
-    static func ==(lhs: Ingredient, rhs: Ingredient) -> Bool {
-        return lhs.name == rhs.name
-    }
-}

@@ -14,11 +14,15 @@ struct DiscoverView: View {
     // MARK: Views
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ingredientsSection
                 recipesSections
             }
+
             .navigationTitle("Discover")
+            .navigationBarItems(trailing: ProfileSettingsButton {
+                viewModel.settingsTapped()
+            })
         }
         .onAppear {
             viewModel.onAppear()

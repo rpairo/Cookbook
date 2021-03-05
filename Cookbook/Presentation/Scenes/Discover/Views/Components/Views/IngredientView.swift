@@ -20,18 +20,13 @@ struct IngredientView: View {
                     .scaledToFill()
             }
 
-            Rectangle()
-                .background(Color.black)
-                .opacity(0.3)
-
-            Text(ingredient.name)
-                .padding()
-                .font(.title)
-                .foregroundColor(.white)
+            OpaqueLayerView()
+            ElementTitleView(title: ingredient.name)
         }
         .frame(width: 250, height: 150, alignment: .center)
         .background(Color(.darkGray))
         .cornerRadius(20)
-        .padding()
+        .padding(.vertical)
+        .padding(.leading)
     }
 }
